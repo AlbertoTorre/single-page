@@ -1,0 +1,38 @@
+$green-color: #04C001;
+
+@mixin colors {
+    .white {
+        color:#fff;
+    }
+    .green {
+        color: $green-color;
+        text-shadow: 1px 1px 2px #444;
+    }
+    .gray-light {
+        color:#9B9B9B;
+    }
+}
+
+div {
+    @include colors;
+}
+
+h1 {
+    @include colors;
+    font-size: 3em;
+}
+
+h2 {
+    @include colors;
+}
+
+.container {
+    div.border-custom {
+        border: 2px solid $green-color;
+        height: 1px;
+        width: 50px;
+    }
+    div.bg-gray-custom {
+        background-color:#273138;
+    }
+}
