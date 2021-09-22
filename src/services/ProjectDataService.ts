@@ -21,12 +21,8 @@ class ProjectDataService {
          return http.delete(`/projects/${id}`);
     }
 
-    findByTitle(title: string): Promise<any> {
-        return http.get(`/projects?title=${title}`);
-    }
-
-    findByFeatured(featured: boolean): Promise<any> {
-        return http.get(`/projects?featured=${featured}`);
+    findByFeatured(featured: number): Promise<any> {
+        return http.get(`/projects/featureds/${featured}`);
     }
 }
 

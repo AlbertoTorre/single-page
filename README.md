@@ -1,9 +1,15 @@
 # single-page
 
-## Project setup
+## Instalación dependencias
 ```
 npm install
 ```
+
+## Pre-requisitos
+Subir el proyecto api-single-laravel, instalando dependencias y ejecutando migraciones que de estas retorna el token de acceso que se debe poner el archivo raíz .env.development:
+
+Ejemplo:
+VUE_APP_SANCTUM_TOKEN=1|6sON7LxgLBmhXkiOjMkF2uUwcwVLZ8zuZgHsXPGO
 
 ### Compiles and hot-reloads for development
 ```

@@ -43,6 +43,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .navbar-dark {
+    background-color: #011923c4;
     .navbar-nav {
         .nav-item {
             margin:0 10px;

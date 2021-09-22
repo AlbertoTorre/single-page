@@ -8,6 +8,7 @@
                     <div class="text-left m-auto mx-5 px-4">
                         <h2> <b class="white"> {{ project.title }} </b> </h2>
                         <p class="fs-5"> {{ project.description }} </p>
+                        <p> <span class="badge bg-light text-dark" :key="'t'+idx" v-for="(tag,idx) in project.tags">{{ tag }}</span> </p>
                     </div>
                 </div>
             </div>
@@ -18,11 +19,12 @@
                     <div class="text-left m-auto mx-5 px-4">
                         <h2> <b class="white"> {{ project.title }}</b> </h2>
                         <p class="fs-5">{{ project.description }}</p>
+                        <p> <span class="badge bg-light text-dark" :key="'t'+idx" v-for="(tag,idx) in project.tags">{{ tag }}</span> </p>
                     </div>
                 </div>
             </div>
             <div class="col text-left bg-black-1 p-0 pt-4">
-                <img :src="project.image" class="img-fluid float-start" alt="">
+                <img :src="project.image" class="img-fluid float-end" alt="">
             </div>
         </div>
         <div class="row bg-white-custom" v-else-if="structure==2">
@@ -34,6 +36,7 @@
                     <div class="text-left m-auto mx-5 px-4">
                         <h2> <b>  {{ project.title }} </b> </h2>
                         <p class="fs-5"> {{ project.description }} </p>
+                        <p> <span class="badge bg-light text-dark" :key="'t'+idx" v-for="(tag,idx) in project.tags">{{ tag }}</span> </p>
                     </div>
                 </div>
             </div>

@@ -67,7 +67,7 @@ export default defineComponent({
     },
     methods:{
         loadProjects() {
-            ProjectDataService.findByFeatured(true)
+            ProjectDataService.findByFeatured(1)
             .then( ( response: ResponseData )=> {
                 if ( response.status === 200 ) {
                     this.projects = response.data
